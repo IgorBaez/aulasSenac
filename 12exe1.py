@@ -1,19 +1,12 @@
-def baz():
-    print("bazzzzz")
+def calculo(x,y,z):
+    cal=(x+y)*z
+    return cal
 
-baz()
-
-def hello(nome):
-    print("Ola",nome)
-
-
-
-
-
-
-
-
-
+x=int(input("primeiro numero"))
+y=int(input("segundo numero"))
+z=int(input("terceiro numero"))
+cal=calculo(x,y,z)
+print(cal)
 
 
 
