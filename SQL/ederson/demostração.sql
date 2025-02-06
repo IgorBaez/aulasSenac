@@ -124,17 +124,22 @@ INSERT INTO Curso (nome, tipo, departamento, coordenador, vice_coordenador) VALU
 ('Letras Português', 'Graduação', 9, 9, 10),
 ('Filosofia Política', 'Doutorado', 10, 10, 1);
 
+
+-- Inserção de Alunos
+INSERT INTO Aluno (nome, cpf, rua, cidade, cep, data_nascimento, sexo, departamento, curso) VALUES
+('Lucas Santos', '12312312312', 'Rua A', 'Cidade X', '11111111', '2000-01-01', 'M', 1, 1),
+('Mariana Souza', '23423423423', 'Rua B', 'Cidade Y', '22222222', '1999-02-02', 'F', 2, 2),
+('Pedro Lima', '34534534534', 'Rua C', 'Cidade Z', '33333333', '2001-03-03', 'M', 3, 3),
+('Ana Clara', '45645645645', 'Rua D', 'Cidade X', '44444444', '1998-04-04', 'F', 4, 4),
+('João Pedro', '56756756756', 'Rua E', 'Cidade Y', '55555555', '2002-05-05', 'M', 5, 5),
+('Fernanda Rocha', '67867867867', 'Rua F', 'Cidade Z', '66666666', '1997-06-06', 'F', 6, 6),
+('Guilherme Nunes', '78978978978', 'Rua G', 'Cidade X', '77777777', '2003-07-07', 'M', 7, 7),
+('Camila Torres', '89089089089', 'Rua H', 'Cidade Y', '88888888', '1996-08-08', 'F', 8, 8),
+('Gustavo Almeida', '90190190190', 'Rua I', 'Cidade Z', '99999999', '2004-09-09', 'M', 9, 9),
+('Juliana Mendes', '01201201201', 'Rua J', 'Cidade X', '10101010', '1995-10-10', 'F', 10, 10);
+
 -- Inserção de Disciplinas
 INSERT INTO Disciplina (nome, descricao, creditos, departamento) VALUES
 ('Banco de Dados', 'Estudo de bancos de dados relacionais', 4, 1),
 ('Sistemas Operacionais', 'Funcionamento de SOs', 4, 1),
-('Circuitos Elétricos', 'Conceitos de circuitos', 4, 2),
-('Cálculo Diferencial', 'Derivadas e integrais', 4, 3),
-('Física Quântica', 'Teoria quântica', 4, 4),
-('Genética Molecular', 'Estudo do DNA', 4, 5),
-('Química Orgânica', 'Compostos orgânicos', 4, 6),
-('História Antiga', 'História da humanidade', 4, 7),
-('Geopolítica', 'Relações internacionais', 4, 8),
-('Gramática Avançada', 'Estruturas gramaticais', 4, 9),
-('Ética e Filosofia', 'Estudo da ética', 4, 10),
-('Inteligência Artificial', 'Conceitos de IA', 4, 1);
+('Circuitos Elétricos', 'Conceitos de circuitos', 4, 2);
