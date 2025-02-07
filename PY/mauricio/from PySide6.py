@@ -18,13 +18,9 @@ class NameWindow(QMainWindow):
 
         img_label = QLabel(self)
         pixmap = QPixmap("cat.jpg")
-
-        if not pixmap.isNull():
-            pixmap = pixmap.scaled(200, 200, Qt.KeepAspectRatio)
-            img_label.setPixmap(pixmap)
-        else:
-            img_label.setText("Image not found")
-            img_label.setAlignment(Qt.AlignCenter)
+        pixmap = pixmap.scaled(200, 200, Qt.KeepAspectRatio)
+        img_label.setPixmap(pixmap)
+       
 
         layout.addWidget(label)
         layout.addWidget(img_label)
