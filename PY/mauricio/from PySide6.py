@@ -6,35 +6,33 @@ import sys
 class NameWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("foto e nome")
-        self.setGeometry(100,100,400,400)
-          
-        central_widget=QWidget(self)
-        layout=QVBoxLayout(central_widget)
+        self.setWindowTitle("Foto e Nome")
+        self.setGeometry(100, 100, 400, 400)
+        
+        central_widget = QWidget(self)
+        layout = QVBoxLayout(central_widget)
 
-        label=QLabel("Professor Bazzz",self)
-        label.setStyleSheet("font-size:24px; font-weight: bold; text-align:center")
+        label = QLabel("Professor Bazzz", self)
+        label.setStyleSheet("font-size: 24px; font-weight: bold; margin: 10px;")
         label.setAlignment(Qt.AlignCenter)
 
-        img_label=QLabel(self)
+        img_label = QLabel(self)
         pixmap = QPixmap("cat.jpg")
-        pixmap = pixmap.scaled(200, 200)
-        img_label.setPixmap(pixmap)
-        img_label.setAlignment(Qt.AlignCenter)
+
+        if not pixmap.isNull():
+            pixmap = pixmap.scaled(200, 200, Qt.KeepAspectRatio)
+            img_label.setPixmap(pixmap)
+        else:
+            img_label.setText("Image not found")
+            img_label.setAlignment(Qt.AlignCenter)
 
         layout.addWidget(label)
         layout.addWidget(img_label)
 
         self.setCentralWidget(central_widget)
-if __name__=="__main__":
-    
-    app=QApplication(sys.argv)
-    
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
     window = NameWindow()
     window.show()
-
     sys.exit(app.exec())
-
-
-
-
