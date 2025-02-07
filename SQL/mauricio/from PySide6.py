@@ -1,27 +1,31 @@
-from PySide6.QtCore import QApplication, Qlabel, QMainWindonw, QVBoxLayout, QWidget, Qt
-from PySide6.QtGui import QPixmap 
+from PySide6.QtCore import Qt
+from PySide6.QtGui import QPixmap
+from PySide6.QtWidgets import QApplication, QLabel, QMainWindow, QVBoxLayout, QWidget
 import sys
 
-class NameWindow(QMainWindonw):
+class NameWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindoTitle("foto e nome")
+        self.setWindowTitle("foto e nome")
         self.setGeometry(100,100,400,400)
-
+          
         central_widget=QWidget(self)
         layout=QVBoxLayout(central_widget)
 
-        label=Qlabel("Professor Bazzz",self)
+        label=QLabel("Professor Bazzz",self)
         label.setStyleSheet("font-size:24px; font-weight: bold; text-align:center")
-        label.setAlignment(Qt.aligmCenter)
+        label.setAlignment(Qt.AlignCenter)
 
-        img_label=Qlabel(self)
-        pixmap = QPixmap("foto.png")
+        img_label=QLabel(self)
+        pixmap = QPixmap("cat.jpg")
         pixmap = pixmap.scaled(200, 200)
         img_label.setPixmap(pixmap)
+        img_label.setAlignment(Qt.AlignCenter)
 
         layout.addWidget(label)
-        layout.addwidgat(img_label)
+        layout.addWidget(img_label)
+
+        self.setCentralWidget(central_widget)
 if __name__=="__main__":
     
     app=QApplication(sys.argv)
