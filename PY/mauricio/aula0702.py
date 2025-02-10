@@ -1,6 +1,7 @@
 import sys
 from PySide6.QtWidgets import QApplication, QWidget, QLabel, QLineEdit, QPushButton, QVBoxLayout
 
+
 class ReverseNameWindow(QWidget):
     def __init__(self):
         super().__init__()
