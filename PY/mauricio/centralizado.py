@@ -1,5 +1,5 @@
 import sys
-from PySide6.QtWidgets import QApplication, QLabel, QLineEdit, QVBoxLayout, QWidget, QPushButton
+from PySide6.QtWidgets import QApplication, QLabel, QLineEdit, QVBoxLayout, QWidget, QPushButton, QMessageBox
  
 class RegisterWindow(QWidget):
     def __init__(self):
@@ -78,10 +78,10 @@ class LoginWindow(QWidget):
         password = self.input_password.text()
  
         if username == correct_username and password == correct_password:
-            print("Login bem-sucedido! Abrindo tela de cadastro...")
+            QMessageBox.information(self, "Login bem-sucedido", "Bem-vindo, " + username + "!")
             self.open_register()
         else:
-            print("Usuário ou senha incorretos.")
+            QMessageBox.warning(self, "Erro no Login", "Usuário ou senha incorretos.")
  
     def open_register(self):
         self.register_window = RegisterWindow()

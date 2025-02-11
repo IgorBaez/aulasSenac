@@ -2,6 +2,7 @@ create database escola;
 use escola;
 
 create table dadosAluno(
+
 	matricula int auto_increment,
     nome varchar (30) not null,
     email varchar (30) not null,
