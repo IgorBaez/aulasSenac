@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>421</width>
     <height>600</height>
    </rect>
   </property>
@@ -17,8 +17,8 @@
    <widget class="QLabel" name="label_formulario">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>40</y>
+      <x>130</x>
+      <y>30</y>
       <width>91</width>
       <height>16</height>
      </rect>
@@ -35,11 +35,14 @@
    <widget class="QFrame" name="frame_nome">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>100</y>
+      <x>70</x>
+      <y>90</y>
       <width>271</width>
       <height>51</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Shape::StyledPanel</enum>
@@ -74,8 +77,8 @@
    <widget class="QFrame" name="frame_ender">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>160</y>
+      <x>70</x>
+      <y>150</y>
       <width>271</width>
       <height>51</height>
      </rect>
@@ -95,6 +98,9 @@
        <height>16</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
      <property name="text">
       <string>Endereço</string>
      </property>
@@ -113,11 +119,14 @@
    <widget class="QFrame" name="frame_CPF">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>220</y>
+      <x>70</x>
+      <y>210</y>
       <width>271</width>
       <height>51</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Shape::StyledPanel</enum>
@@ -155,8 +164,8 @@
    <widget class="QFrame" name="frame_sexo">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>280</y>
+      <x>70</x>
+      <y>270</y>
       <width>120</width>
       <height>61</height>
      </rect>
@@ -176,6 +185,9 @@
        <height>20</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
      <property name="text">
       <string>Feminino</string>
      </property>
@@ -188,6 +200,9 @@
        <width>89</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
       <string>Masculino</string>
@@ -202,6 +217,9 @@
        <height>16</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
      <property name="text">
       <string>Sexo</string>
      </property>
@@ -210,8 +228,8 @@
    <widget class="QFrame" name="frame_Telefone">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>350</y>
+      <x>70</x>
+      <y>340</y>
       <width>261</width>
       <height>51</height>
      </rect>
@@ -241,6 +259,9 @@
        <height>16</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
      <property name="text">
       <string>Telefone</string>
      </property>
@@ -249,8 +270,8 @@
    <widget class="QFrame" name="frame_confirmo">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>470</y>
+      <x>70</x>
+      <y>460</y>
       <width>261</width>
       <height>31</height>
      </rect>
@@ -270,6 +291,9 @@
        <height>20</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
      <property name="text">
       <string>Confirmo as informações acima</string>
      </property>
@@ -278,8 +302,8 @@
    <widget class="QFrame" name="frame_button_concluir">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>510</y>
+      <x>150</x>
+      <y>500</y>
       <width>81</width>
       <height>31</height>
      </rect>
@@ -304,11 +328,11 @@
      </property>
     </widget>
    </widget>
-   <widget class="QFrame" name="frame">
+   <widget class="QFrame" name="frame_NAS">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>410</y>
+      <x>70</x>
+      <y>400</y>
       <width>120</width>
       <height>51</height>
      </rect>
@@ -319,7 +343,7 @@
     <property name="frameShadow">
      <enum>QFrame::Shadow::Raised</enum>
     </property>
-    <widget class="QLabel" name="label">
+    <widget class="QLabel" name="label_NAS">
      <property name="geometry">
       <rect>
        <x>0</x>
@@ -328,11 +352,14 @@
        <height>16</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
      <property name="text">
       <string>Data de Nascimento</string>
      </property>
     </widget>
-    <widget class="QDateEdit" name="dateEdit">
+    <widget class="QDateEdit" name="dateEdit0_NAS">
      <property name="geometry">
       <rect>
        <x>0</x>
@@ -343,14 +370,18 @@
      </property>
     </widget>
    </widget>
-   <widget class="QFrame" name="frame_2">
+   <widget class="QFrame" name="frame_FORMULARIO">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>30</y>
+      <x>40</x>
+      <y>20</y>
       <width>331</width>
       <height>521</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 255);
+color: rgb(255, 255, 255);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Shape::StyledPanel</enum>
@@ -358,20 +389,51 @@
     <property name="frameShadow">
      <enum>QFrame::Shadow::Raised</enum>
     </property>
+    <widget class="QLabel" name="label_IMG">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>20</y>
+       <width>71</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="CCC.qrc">:/ICON/CCC.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
    </widget>
+   <zorder>frame_FORMULARIO</zorder>
+   <zorder>label_formulario</zorder>
+   <zorder>frame_nome</zorder>
+   <zorder>frame_ender</zorder>
+   <zorder>frame_CPF</zorder>
+   <zorder>frame_sexo</zorder>
+   <zorder>frame_Telefone</zorder>
+   <zorder>frame_confirmo</zorder>
+   <zorder>frame_button_concluir</zorder>
+   <zorder>frame_NAS</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>421</width>
      <height>22</height>
     </rect>
    </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="CCC.qrc"/>
+ </resources>
  <connections/>
 </ui>
