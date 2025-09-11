@@ -48,8 +48,12 @@ else{
         echo"O arquivo".htmlspecialchars(basename($_FILES["fileToUpload"]["name"]))."foi enviado.";
         $query_insert="insert into path values('./{$targe_file}');";
         $result_insert=mysqli_query($con,$query_insert);}
-}
 
+        else{
+    echo"Desculpe , ocorreu um erro"
+    }
+
+}
 
 
 
