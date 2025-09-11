@@ -39,10 +39,16 @@ if($imageFileType !="jpg" && $imageFileType !="png" && $imageFileType !="jpeg" &
 
 }
 
-if($uploadOk ==0;){
+if($uploadOk ==0){
     echo"Desculpe, seu arquivo não pode ser submetido.";
 }
 
+else{
+    if(move_uploaded_file($_FILES["fileUpload"]["tmp_name"],$target_file)){
+        echo"O arquivo".htmlspecialchars(basename($_FILES["fileToUpload"]["name"]))."foi enviado.";
+        $query_insert="insert into path values('./{$targe_file}');";
+        $result_insert=mysqli_query($con,$query_insert);}
+}
 
 
 
